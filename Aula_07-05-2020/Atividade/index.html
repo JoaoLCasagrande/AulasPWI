@@ -9,52 +9,79 @@
         <meta charset="UTF-8">
 
         <style>
+            /*Reset da página*/
+            *{
+                margin: 0;
+                padding: 0;
+            }
 
             body{
-                background-color:rgb(240, 230, 140);
-            }
-
-            h1{
-                color: rgb(0, 204, 204);
-                font-size: 30pt;
-            }
-
-            p{
-                font-size: 20pt;
+                width: 100%;
+                height: 100%;
+                font-family: Arial;
+                background-color: #9f19b1;
             }
 
             a{
-                font-size: 15pt;
+                text-decoration: none;
             }
 
-        
+            header{
+                position: sticky;
+                top: 0;
             }
 
-            #titulo {
-                color: rgb(248, 248, 7);
+            .topo{
+                background-color: #ffffff;
+                height: 80px;
+                text-align: center;
             }
 
-            .negrito {
-                color: #000000;
-                font-weight: bold;
+            .esp_logo{
+                width: 130px;
+                padding: 5px;
+                float: left;
             }
-            
+
+            #img_logo{
+                width: 100%;
+                height: auto;
+            }
+
+            .nome_pagina{
+                display: inline-block;
+                margin: 25px auto;
+                color: #FF4500;
+            }
+
+            .barra_topo{
+                background-color: #FF4500;
+                height: 20px;
+            }
         </style>
 
     </head>
 
     <body>
-        <h1 id="titulo" style="text-align: center; background-color:#000000; margin-left: 250px; margin-right: 250px;">
-            Receitas Bolo e Strogonoff para arrasar na reunião da família
-        </h1>
-
-        <p><u class="negrito"> O que você quer fazer primeiro?</u></p>
+        <header>
+            <div class="topo">
+                <div class="esp_logo">
+                    <img id="img_logo" src="../img/logo.png" alt="Logotipo Da Página">
+                </div>
+                <h1 class="nome_pagina">
+                    Receitas & Receitas
+                </h1>
+            </div>
+            <div class="barra_topo"></div>
+        </header>
+        
+        <p> O que você quer fazer primeiro?</p>
         <ul>
-        <a style="color:green;" href="../receitas_salgadas/strongonoff.html" target="_blank">Receita de Strogonoff</a><br/>
-        <a style="color: green;" href="../receitas_doces/bolo.html " target="_blank">Receita do bolo</a>
+        <a href="../receitas_salgadas/strongonoff.html" target="_blank">Receita de Strogonoff</a><br/>
+        <a href="../receitas_doces/bolo.html " target="_blank">Receita do bolo</a>
         </ul>
 
-        <p class="negrito"><u>Receitas retiradas do site - </u><a style="color: blue;" href="https://www.tudogostoso.com.br" target="_blank"> TUDO GOSTOSO</a></p>
+        <p>Receitas retiradas do site - <a href="https://www.tudogostoso.com.br" target="_blank"> TUDO GOSTOSO</a></p>
 
         <img src="../img/animacao.gif" alt="gif confeiteira"><img src="../img/cozinhando.gif" alt="gif cozinhando">
         
