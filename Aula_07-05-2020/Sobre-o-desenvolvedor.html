@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+
+        <title>Almanaque Dos Filmes</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            header{
+                top: 0;
+                position: static;
+                background-color: rgb(0, 0, 112);
+            }
+
+            .topo{
+                background-color: #00ffff;
+                height: 280px;
+                text-align: center;
+                border-radius: 25px;
+                margin-left: 360px;
+                margin-right: 360px;
+            }
+
+            #logo{
+                height: auto;
+                width: 100%;
+            }
+
+            .esp_logo{
+                width: 400px;
+                margin-left: 110px;
+                margin-right: 250px;
+            }
+
+            .barra_embaixo{
+                background-color: #8B4513;
+                height: 20px;
+            }
+
+            .sobre-desenvolvedor{
+                margin-top: 15px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 20px;
+                margin-left: 150px;
+                margin-right: 150px;    
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;            
+            }
+            
+            #Letras{
+                text-align: center;
+                font-family: arial;
+                font-size: 50px;
+                color: #0000CD;
+            }
+
+            .informações{
+                margin-top: 15px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 20px;
+                margin-left: 150px;
+                margin-right: 150px;  
+            }
+
+            .barra{
+                height: 100px;
+                background-color: #808080;
+                width: 100%;
+                position: static;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                text-align: center;
+            }
+
+            .escrita{
+                padding-top: 20px;
+                font-family:serif;
+            }
+
+            #inf{
+                padding-top: 10px;
+                font-size: 40px;
+                color: #ffffff;
+            }
+
+            .foto{
+                position: absolute;
+                padding: 20px;
+                width: 150px;
+            }
+
+            .foto img{
+                width: 100%;
+                padding-left: 15px;
+                border-top-left-radius: 75%;
+                border-top-right-radius: 75%;
+                border-bottom-right-radius: 75%;
+                border-bottom-left-radius: 75%;
+            }
+
+            .dados_desenv{
+                margin-top: 100px;
+
+                border-left: 10px solid #0000CD;
+                
+                margin-left: 150px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .inform{
+                color: #0000CD;
+                font-size: 15px;
+            }
+        </style>
+    
+    </head>
+
+
+
+    <body background="../Projects/imgs/Background.png">
+        <header>
+        <div class="topo">
+            <div class="esp_logo">
+                <img id="logo" src="../Projects/imgs/Logo_site.png" alt="Logo do site"> <h1 style="font-family:monospace;">Almanaque Dos Filmes</h1>
+            </div>
+        </div>
+        <div class="barra_embaixo"></div>
+        </header>
+
+
+        <div class="sobre-desenvolvedor">
+        <p id="Letras"><u><b>Sobre O Desenvolvedor</b></u></p>
+        </div>
+        <br/>
+
+        <div class="informações">
+
+            <div class="barra">
+                
+                <div class="foto">
+                    <img src="../Projects/imgs/Foto-Profissional.jpg" alt="Foto-Do-Desenvolvedor">
+                </div>
+                <div class="escrita">
+                    <p id="inf">João Luiz Casagrande</p>
+                </div>
+            </div>
+
+            <div class="dados_desenv">
+                <table>
+                    <tr>
+                        <td><img src="../Projects/imgs/Chapeu Beca.png" alt="Icone-chapeu-beca"></td>
+                        <td class="inform">Técnico em Desenvolvimento de Sistemas Pelo CPS Cidade Do Livro</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../Projects/imgs/Casa.png" alt="Icone-Casa"></td>
+                        <td class="inform">Lençóis Paulista-São Paulo-Brasil</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../Projects/imgs/Gmail.png" alt="Icone-gmail"></td>
+                        <td>
+                            <a class="inform" href="mailto:joaoluizcasagrande@gmail.com" target="_blank">joaoluizcasagrande@gmail.com</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../Projects/imgs/Email-Etec.png" alt="Icone-email-institucional"></td>
+                        <td>
+                            <a class="inform"  href="mailto:joao.casagrande2@etec.sp.gov.br" target="_blank">joao.casagrande2@etec.sp.gov.br</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../Projects/imgs/github.png" alt="Icone-github"></td>
+                        <td>
+                            <a class="inform" href="https://github.com/settings/profile" target="_blank">joaolcasagrande</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../Projects/imgs/facebook.png" alt="Icone-facebook"></td>
+                        <td>
+                            <a class="inform" href="https://www.facebook.com/profile.php?id=100004297120110" target="_blank">João Luiz Casagrande</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </body>
+</html>
