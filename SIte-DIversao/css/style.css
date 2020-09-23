@@ -15,7 +15,6 @@
 /* Declare heights because of positioning of img element */
 .carousel-item {
     height: 32rem;
-    width: 10%;
 }
 
 .carousel-item>img {
@@ -42,5 +41,5 @@
 /* MY CSS
 -------------------------------------------------- */
 .card-img-top {
-    /* COLOQUE AQUI A ALTURA QUE DESEJA */
+    height: 30px;
 }
