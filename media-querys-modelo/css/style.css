@@ -1,0 +1,36 @@
+.row {
+    width: 100%;
+}
+.col {
+    background-color: #cccccc;
+    height: 100px;
+}
+@media (max-width: 400px) {
+    .col {
+        background-color: #ff0000;
+        height: 200px;
+    }
+}
+@media(max-width: 360px) {
+    .col {
+        height: 120px;
+    }
+}
+@media (min-width: 401px) and (max-width: 1024px) {
+    .col {
+        background-color: #00ff00;
+    }
+}
+@media (min-width:1024px) {
+    .col {
+        background-color: #0000ff;
+    }
+}
+@media (orientation: landscape) {
+    body {
+        background-color: #ff12ff;
+    }
+    .col {
+        background-color: #eeff01;
+    }
+}
