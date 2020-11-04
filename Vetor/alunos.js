@@ -1,16 +1,19 @@
 var alunos = [5];
 
-aluno[1] = "Natiara";
+alunos[1] = "Natiara";
 
-aluno [1] = "João Pedro";
+alunos[1] = "João Pedro";
 
-aluno [2] = "Maria";
+alunos[2] = "Maria";
 
-aluno [3] = "Paulo";
+alunos[3] = "Paulo";
 
-aluno [4] = "Monique";
+alunos[4] = "Monique";
 
-aluno [5] = "André";
+alunos[5] = "André";
 
 console.log(alunos);
 
+var frutas = ['maça','melancia','melão'];
+
+console.log("fruta 1:" + frutas[1])
