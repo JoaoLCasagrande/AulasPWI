@@ -1,20 +1,20 @@
-$('#esconderDesenho').click(function(){
-    $('#drax').hide();
+$('#EsconderFilmes').click(function(){
+    $('#dosFilmes').hide();
 })
-$('#aparecerDesenho').click(function(){
-    $('#drax').show();
+$('#MostrarFilmes').click(function(){
+    $('#dosFilmes').show();
 });
-$('#esconderSerie').click(function(){
-    $('#groot').hide();
+$('#EsconderSerie').click(function(){
+    $('#dasSeries').hide();
 })
-$('#aparecerSerie').click(function(){
-    $('#groot').show();
+$('#MostrarSerie').click(function(){
+    $('#dasSeries').show();
 });
-$('#esconderFilmes').click(function(){
-    $('#rocket').hide();
+$('#EsconderAnimes').click(function(){
+    $('#dosAnimes').hide();
 })
-$('#aparecerFilmes').click(function(){
-    $('#rocket').show();
+$('#MostrarAnimes').click(function(){
+    $('#dosAnimes').show();
 });
 $('#fundoPrimary').click(function(){
     $('body').addClass('bg-primary')
@@ -40,7 +40,7 @@ $('#fundoLight').click(function(){
 $('#fundoDark').click(function(){
     $('body').addClass('bg-dark')
 });
-$('#semfundo').click(function(){
+$('#semFundo').click(function(){
     $('body').removeClass('bg-dark bg-light bg-info bg-warning bg-danger bg-success bg-secondary bg-primary')
 });
 $('#enviar').click(function(){

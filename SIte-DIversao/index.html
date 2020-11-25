@@ -14,46 +14,51 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <style>
-    .card-img-top {
-      height: 160px;
+    .card-img-top{
+      height: 200px;
     }
 
-    .card {
-      margin-top: 10px;
-    }
-
-    .container-md {
-      width: 1000px;
-      margin-left: 80px;
-      font-size: 30px;
-      border-top-left-radius: 35px;
-      border-bottom-right-radius: 35px;
-      margin-top: 50px;
-    }
-
-    #filme-md {
-      background-color: #FA8072;
-      color: #ff0000;
-      margin-right: 80px;
-    }
-
-    #serie-md {
-      background-color: #98FB98;
-      color: #006400;
-      margin-right: 80px;
-    }
-
-    #anime-md {
-      background-color: #87CEEB;
-      color: #0000FF;
-      margin-right: 80px;
-    }
-
-    .container-fluid {
+    .cores{
       margin-left: 70px;
     }
-  </style>
 
+    #barraFilmes{
+      background-color:#EE82EE;
+      color: #8B008B;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    #barraSeries{
+      background-color: #98FB98;
+      color: #006400;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    #barraAnimes{
+      background-color: #87CEEB;
+      color: #0000FF;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    .botão-mostrar-esconder{
+      margin-left: 30px;
+    }
+  </style>
 </head>
 
 <body>
@@ -98,7 +103,7 @@
   <!--FIM CARROSSEL-->
 
   <div class="container-fluid">
-    <div class="temas">
+    <div class="cores">
       <h5 style="text-align: center;">Cores: </h5>
       <button type="button" class="btn btn-primary" id="fundoPrimary">Fundo Primary</button>
       <button type="button" class="btn btn-secondary" id="fundoSecondary">Fundo Secondary</button>
@@ -108,33 +113,99 @@
       <button type="button" class="btn btn-info" id="fundoInfo">Fundo Info</button>
       <button type="button" class="btn btn-light" id="fundoLight">Fundo Light</button>
       <button type="button" class="btn btn-dark" id="fundoDark">Fundo Dark</button>
-      <button type="button" class="btn btn-outline-info" id="semfundo">Remover Fundo</button>
+      <button type="button" class="btn btn-outline-info" id="semFundo">Remover Fundo</button>
     </div>
   </div>
 
-  <div class="container-md" id="filme-md">
+  <div class="alert d-flex justify-content-start" role="alert" id="barraFilmes">
     <p>Filmes</p>
-    <button type="button" class="btn btn-outline-danger" id="esconderFilmes">Esconder Conteúdo</button>
-    <button type="button" class="btn btn-outline-dark" id="aparecerFilmes">Aparecer Conteúdo</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderFilmes">Esconder Filmes</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarFilmes">Mostrar Filmes</button>
   </div>
-  <div class="row" id="rocket">
+  <div class="row" id="dosFilmes">
     <div class="col-md-4">
       <div class="card">
-        <img src="img/avengers.jpg" class="card-img-top" alt="Imagem de Vingadores: Ultimato">
+        <img src="img/Jãozin I MAria.jpg" class="card-img-top" alt="Imagem do Filme João e Maria: Caçadores de bruxas">
         <div class="card-body">
-          <h5 class="card-title">Vingadores: Ultimato</h5>
+          <h5 class="card-title">João & Maria: Caçadores de Bruxas</h5>
           <p class="card-text">
-            Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de
-            amigos e entes
-            queridos, e tentarão trazer todos de volta, custe o que custar.
+            A clássica história dos dois irmãos, a casa de doce e as bruxas, mas um pouco diferente e mais violento.
+          </p>
+          <br>
+          <div class="row ">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">98min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/V de Vingança.jpg" class="card-img-top" alt="Imagem do Filme V de Vingança">
+        <div class="card-body">
+          <h5 class="card-title">V de Vingança</h5>
+          <p class="card-text">
+             Um governo ditador, violento, sujo...e um homem cansado de tudo isso e que sabe todos os podres para acabar com ele.
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">133min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/IT.jpg" class="card-img-top" alt="Imagem do filme It: A Coisa">
+        <div class="card-body">
+          <h5 class="card-title">IT: A Coisa</h5>
+          <p class="card-text">
+            Um ser terrível que devora a carne das pessoas enquanto se alimenta do medo delas, principalmente crianças.
           </p>
           <br><br>
           <div class="row">
             <div class="col-md-6">
-              <a href="#" class="btn btn-primary">View</a>
+              <a href="#" class="btn btn-primary">Ver</a>
             </div>
             <div class="col-md-6">
-              <p class="text-muted time">3h2min</p>
+              <p class="text-muted time">135min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fim Filmes-->
+
+  <div class="alert d-flex justify-content-start mt-5" role="alert" id="barraSeries">
+    <p>Séries</p>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderSerie">Esconder Séries</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark" id="MostrarSerie">Mostrar Séries</button>
+</div>
+  <div class="row" id="dasSeries">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/supernatural.jpg" class="card-img-top" alt="Imagem da Série Supernatural">
+        <div class="card-body">
+          <h5 class="card-title">Supernatural</h5>
+          <p class="card-text">
+            Dois irmãos que percorrem o país esfrentando seres mitológicos, sobrenaturais ou até divinos, qualquer um que não siga um bom caminho.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">15 Temporadas</p>
             </div>
           </div>
         </div>
@@ -142,20 +213,18 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="img/arthur.jpg" class="card-img-top" alt="Imagem de Arthur: Um Milionário Irresistível">
+        <img src="img/TWD.jpg" class="card-img-top" alt="Imagem da Série The Walking Dead">
         <div class="card-body">
-          <h5 class="card-title">Arthur: Um Milionário Irresistível</h5>
+          <h5 class="card-title">The Walking Dead</h5>
           <p class="card-text">
-            O mimado, irresponsável e bilionário, Arthur Bach, mora numa mansão com sua babá, a Sra.
-            Hobson, porém tudo muda quando sua mãe o obriga a casar com uma mulher que ele não ama.
+            Um grupo liderado pelo ex-policial Rick Grimmes tentando sobreviver ao apocalipse zumbi, enfrentando os mortos-vivos e pessoas más no caminho
           </p>
-          <br>
           <div class="row">
             <div class="col-md-6">
-              <a href="#" class="btn btn-primary">View</a>
+              <a href="#" class="btn btn-primary">Ver</a>
             </div>
             <div class="col-md-6">
-              <p class="text-muted time">1h50min</p>
+              <p class="text-muted time">10 Temporadas</p>
             </div>
           </div>
         </div>
@@ -163,13 +232,79 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="img/enrolados.jpg" class="card-img-top" alt="Imagem de Enrolados">
+        <img src="img/Dexter.jpg" class="card-img-top" alt="Imagem da Série Dexter">
         <div class="card-body">
-          <h5 class="card-title">Enrolados</h5>
+          <h5 class="card-title">Dexter</h5>
           <p class="card-text">
-            Uma garota com cabelos mágicos que vive em uma torre conhece um bandido, e com ele, finalmente
-            ela foge
-            da torre e tenta realizar seu sonho, enfrentando muitos perigos e conhecendo novas pessoas.
+            Um policial que secretamente é um psicopata. Uma combinação bem diferente, mas que de uma certa forma, é usada para o bem.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">8 Temporadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fim Séries-->
+
+  <div class="alert d-flex justify-content-start" role="alert" id="barraAnimes">
+    <p>Animes</p>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderAnimes">Esconder Animes</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarAnimes">Mostrar Animes</button>
+  </div>
+  <div class="row" id="dosAnimes">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/Bleach.jpg" class="card-img-top" alt="Imagem do Anime Bleach">
+        <div class="card-body">
+          <h5 class="card-title">Bleach</h5>
+          <p class="card-text">
+            Um garoto que tem uma vida normal até ser atacado por um Hollow e se tornar o mais novo ceifeiro de almas. No começo parece ser algo interessante e legal, mas isso o causa grandes problemas.
+          </p>
+          <br><br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">366 episódios</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/Sword.jpg" class="card-img-top" alt="Imagem do Anime Sword Art Online">
+        <div class="card-body">
+          <h5 class="card-title">Sword Art Online</h5>
+          <p class="card-text">
+            Um garoto, preso em um jogo em que ele pode perder a própria vida. É então que ele embarca em uma jornada incrível onde encontra o amor da sua vida.
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">96 episódios</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/Death Note.jpg" class="card-img-top" alt="Imagem do Anime Death Note">
+        <div class="card-body">
+          <h5 class="card-title">Death Note</h5>
+          <p class="card-text">
+            Um garoto universitário, super inteligente e cansado com a injustiça que ganha o poder de matar as pessoas escrevendo o nome deles num caderno chamado Death Note.
           </p>
           <br>
           <div class="row">
@@ -177,119 +312,35 @@
               <a href="#" class="btn btn-primary">View</a>
             </div>
             <div class="col-md-6">
-              <p class="text-muted time">1h40min</p>
+              <p class="text-muted time">37 episódios</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--FIM 1° FLEX-->
 
-  <div class="container-md" id="serie-md">Séries</div>
-
-  <div class="d-flex justify-content-around">
-    <div class="card">
-      <img src="img/supernatural.jpg" class="card-img-top" alt="Supernatural">
-      <div class="card-body">
-        <h5 class="card-title">Sobrenatural</h5>
-        <p class="card-text">Esses dois irmãos juntos enfrentam demônios, vampiros, lobisomens, até deuses...afinal, é
-          negócio da família: ser caçador. E você pode acompanhar a jornada emocionante deles nessa
-          série de sucesso.</p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">15 temporadas</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="img/TWD.jpg" class="card-img-top" alt="The Walking Dead">
-      <div class="card-body">
-        <h5 class="card-title">The Walking Dead</h5>
-        <p class="card-text">Um vírus! Ninguém sabe ainda daonde veio, quem criou, mas uma coisa sabem: os mortos agora
-          andam. Acompanhe Rick (um ex-policial) e seu grupo em uma aventura para sobreviverem nesse mundo devastado.
-        </p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">10 temporadas</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card"">
-      <img src=" img/Dexter.jpg" class="card-img-top" alt="Dexter">
-      <div class="card-body">
-        <h5 class="card-title">Dexter</h5>
-        <p class="card-text">Um psicopata e um policial. Quando você ouve essas duas palavras você pensa: "Dois grandes
-          inimigos". Mas e se os dois forem a mesma pessoa? Pois é, essa é uma grande história pra você acompanhar até o
-          fim.</p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">8 temporadas</p>
-        </div>
-      </div>
-    </div>
   </div>
-  <!--FIM 2° FLEX-->
-
-  <div class="container-md" id="anime-md">Animes</div>
-
-  <div class="d-flex justify-content-around">
-
-    <div class="card">
-      <img src="img/Death Note.jpg" class="card-img-top" alt="Death Note">
-      <div class="card-body">
-        <h5 class="card-title">Death Note</h5>
-        <p class="card-text">O que você faria se tivesse um caderno que matasse quem tiver seu nome escrito nele? Seria
-          um criminoso? Um justiceiro? Um Deus? Pois isso aconteceu com um
-          adolescente chamado Light Yagami; ele encontra um caderno desse e decide fazer justiça contra criminosos
-          soltos.
-          Mas o investigador L não vai deixar barato, e vai caçá-lo a todo custo. É então que começa uma batalha
-          sangrenta.</p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">37 episódios</p>
-        </div>
+  <br><br>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome: </label>
+        <input type="text" class="form-control" id="nome">
       </div>
-    </div>
-
-    <div class="card">
-      <img src="img/SAO.jpg" class="card-img-top" alt="Sword Art Online">
-      <div class="card-body">
-        <h5 class="card-title">Sword Art Online</h5>
-        <p class="card-text">Sword Art Online é um jogo onde o consciente dos jogadores são trasmitidos para um mundo
-          virtual. No começo, tudo parece normal, mas depois os jogadores descobrem que para poderem sair do jogo tem
-          que zerar todos os andares (níveis). Porém, não é tão fácil: A cada andar, um boss diferente, e se morrerem no
-          jogo, morrem na vida real. É então que Kirito começa sua jornada, e entre tantas aventuras, conhece o amor da
-          sua vida.</p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">96 episódios</p>
-        </div>
+      <div class="form-group">
+        <label for="email">E-Mail: </label>
+        <input type="email" class="form-control" id="email">
       </div>
-    </div>
-
-    <div class="card">
-      <img src="img/Bleach.jpg" class="card-img-top" alt="Bleach">
-      <div class="card-body">
-        <h5 class="card-title">Bleach</h5>
-        <p class="card-text">Ichigo Kurosaki é um adolescente, porém não se pode dizer normal: Ele vê espíritos. Certo
-          dia então, sua casa é atacada por um hollow, uma criatura espiritual que devora outros espíritos. É nesse
-          ataque que Ichigo ganha os poderes de uma ceifeira de almas chamada Rukia. Então começa uma aventura chei de
-          emoção, com Ichigo sendo um mais novo ceifador de almas, tendo que enfrentar vários Hollows e até mesmo outros
-          ceifeiros.</p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">366 episódios</p>
-        </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem: </label>
+        <textarea class="form-control" id="mensagem"></textarea>
       </div>
-    </div>
+      <button type="button" class="btn btn-primary" id="enviar">Enviar</button>
+    </form>
   </div>
-  <!--FIM 3° FLEX-->
 
-  <script src="js/script.js"></script>
-
+  <script src="https://kit.fontawesome.com/aab555f963.js" crossorigin="anonymous"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
