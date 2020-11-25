@@ -49,10 +49,11 @@
       margin-right: 80px;
     }
 
-    body{
-      background-color: #000000;
+    .container-fluid {
+      margin-left: 70px;
     }
   </style>
+
 </head>
 
 <body>
@@ -96,47 +97,89 @@
   </div>
   <!--FIM CARROSSEL-->
 
-  <div class="container-md" id="filme-md">Filmes</div>
+  <div class="container-fluid">
+    <div class="temas">
+      <h5 style="text-align: center;">Cores: </h5>
+      <button type="button" class="btn btn-primary" id="fundoPrimary">Fundo Primary</button>
+      <button type="button" class="btn btn-secondary" id="fundoSecondary">Fundo Secondary</button>
+      <button type="button" class="btn btn-success" id="fundoSuccess">Fundo Success</button>
+      <button type="button" class="btn btn-danger" id="fundoDanger">Fundo Danger</button>
+      <button type="button" class="btn btn-warning" id="fundoWarning">Fundo Warning</button>
+      <button type="button" class="btn btn-info" id="fundoInfo">Fundo Info</button>
+      <button type="button" class="btn btn-light" id="fundoLight">Fundo Light</button>
+      <button type="button" class="btn btn-dark" id="fundoDark">Fundo Dark</button>
+      <button type="button" class="btn btn-outline-info" id="semfundo">Remover Fundo</button>
+    </div>
+  </div>
 
-  <div class="d-flex justify-content-around">
-
-    <div class="card">
-      <img src="img/Zathura.jpg" class="card-img-top" alt="Zathura">
-      <div class="card-body">
-        <h5 class="card-title">Zathura</h5>
-        <p class="card-text">Era pra ser apenas um jogo de tabuleiro, mas o que eles não sabiam é que ao começarem a
-          jogar, entrariam em uma aventura nas estrelas, com direito a um combate contra uma nave alíenigena.</p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">114min</p>
+  <div class="container-md" id="filme-md">
+    <p>Filmes</p>
+    <button type="button" class="btn btn-outline-danger" id="esconderFilmes">Esconder Conteúdo</button>
+    <button type="button" class="btn btn-outline-dark" id="aparecerFilmes">Aparecer Conteúdo</button>
+  </div>
+  <div class="row" id="rocket">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/avengers.jpg" class="card-img-top" alt="Imagem de Vingadores: Ultimato">
+        <div class="card-body">
+          <h5 class="card-title">Vingadores: Ultimato</h5>
+          <p class="card-text">
+            Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de
+            amigos e entes
+            queridos, e tentarão trazer todos de volta, custe o que custar.
+          </p>
+          <br><br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">3h2min</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="card">
-      <img src="img/V de Vingança.jpg" class="card-img-top" alt="V de Vingança">
-      <div class="card-body">
-        <h5 class="card-title">V de Vingança</h5>
-        <p class="card-text">Corrupção, ditadura, violência...isso tudo fez uma pessoa passar de seus limites de
-          paciência e ir contra o governo. E é melhor o governo ter medo desse homem que sabe todos os seus podres. É
-          melhor terem medo do V.</p>
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">133min</p>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/arthur.jpg" class="card-img-top" alt="Imagem de Arthur: Um Milionário Irresistível">
+        <div class="card-body">
+          <h5 class="card-title">Arthur: Um Milionário Irresistível</h5>
+          <p class="card-text">
+            O mimado, irresponsável e bilionário, Arthur Bach, mora numa mansão com sua babá, a Sra.
+            Hobson, porém tudo muda quando sua mãe o obriga a casar com uma mulher que ele não ama.
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">1h50min</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="card">
-      <img src="img/IT.jpg" class="card-img-top" alt="IT: A Coisa">
-      <div class="card-body">
-        <h5 class="card-title">IT: A Coisa</h5>
-        <p class="card-text">Nesse filme, uma remasterização de uma série de 1990, um grupo de crianças da cidade de
-          Derry enfrenta uma criatura milenar que pode tornar seus maiores medos realidade. Nessa jornada eles vão descobrir que sua amizade é o que vai salvá-los.</p>
-
-        <div class="d-flex justify-content-around">
-          <p style="color: #808080;">Ver</p>
-          <p style="color: #808080;">135min</p>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/enrolados.jpg" class="card-img-top" alt="Imagem de Enrolados">
+        <div class="card-body">
+          <h5 class="card-title">Enrolados</h5>
+          <p class="card-text">
+            Uma garota com cabelos mágicos que vive em uma torre conhece um bandido, e com ele, finalmente
+            ela foge
+            da torre e tenta realizar seu sonho, enfrentando muitos perigos e conhecendo novas pessoas.
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted time">1h40min</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -175,7 +218,7 @@
     </div>
 
     <div class="card"">
-      <img src="img/Dexter.jpg" class="card-img-top" alt="Dexter">
+      <img src=" img/Dexter.jpg" class="card-img-top" alt="Dexter">
       <div class="card-body">
         <h5 class="card-title">Dexter</h5>
         <p class="card-text">Um psicopata e um policial. Quando você ouve essas duas palavras você pensa: "Dois grandes
@@ -198,9 +241,12 @@
       <img src="img/Death Note.jpg" class="card-img-top" alt="Death Note">
       <div class="card-body">
         <h5 class="card-title">Death Note</h5>
-        <p class="card-text">O que você faria se tivesse um caderno que matasse quem tiver seu nome escrito nele? Seria um criminoso? Um justiceiro? Um Deus? Pois isso aconteceu com um
-          adolescente chamado Light Yagami; ele encontra um caderno desse e decide fazer justiça contra criminosos soltos.
-          Mas o investigador L não vai deixar barato, e vai caçá-lo a todo custo. É então que começa uma batalha sangrenta.</p>
+        <p class="card-text">O que você faria se tivesse um caderno que matasse quem tiver seu nome escrito nele? Seria
+          um criminoso? Um justiceiro? Um Deus? Pois isso aconteceu com um
+          adolescente chamado Light Yagami; ele encontra um caderno desse e decide fazer justiça contra criminosos
+          soltos.
+          Mas o investigador L não vai deixar barato, e vai caçá-lo a todo custo. É então que começa uma batalha
+          sangrenta.</p>
         <div class="d-flex justify-content-around">
           <p style="color: #808080;">Ver</p>
           <p style="color: #808080;">37 episódios</p>
@@ -228,7 +274,11 @@
       <img src="img/Bleach.jpg" class="card-img-top" alt="Bleach">
       <div class="card-body">
         <h5 class="card-title">Bleach</h5>
-        <p class="card-text">Ichigo Kurosaki é um adolescente, porém não se pode dizer normal: Ele vê espíritos. Certo dia então, sua casa é atacada por um hollow, uma criatura espiritual que devora outros espíritos. É nesse ataque que Ichigo ganha os poderes de uma ceifeira de almas chamada Rukia. Então começa uma aventura chei de emoção, com Ichigo sendo um mais novo ceifador de almas, tendo que enfrentar vários Hollows e até mesmo outros ceifeiros.</p>
+        <p class="card-text">Ichigo Kurosaki é um adolescente, porém não se pode dizer normal: Ele vê espíritos. Certo
+          dia então, sua casa é atacada por um hollow, uma criatura espiritual que devora outros espíritos. É nesse
+          ataque que Ichigo ganha os poderes de uma ceifeira de almas chamada Rukia. Então começa uma aventura chei de
+          emoção, com Ichigo sendo um mais novo ceifador de almas, tendo que enfrentar vários Hollows e até mesmo outros
+          ceifeiros.</p>
         <div class="d-flex justify-content-around">
           <p style="color: #808080;">Ver</p>
           <p style="color: #808080;">366 episódios</p>
@@ -237,6 +287,8 @@
     </div>
   </div>
   <!--FIM 3° FLEX-->
+
+  <script src="js/script.js"></script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -249,6 +301,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

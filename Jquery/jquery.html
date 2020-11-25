@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>MiiDIA</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- As a link -->
+    <nav class="navbar navbar-expand-md d-flex justify-content-center fixed-top">
+        <i class="fas fa-film"></i><a class="navbar-brand" href="#">MiiDIA</a>
+    </nav>
+    <div id="carouselExampleCaptions" class="mt-5 carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner expand-md">
+            <div class="carousel-item active">
+                <img src="img/ha.jpg" class="d-block w-100" alt="Imagem Demonstrativa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><b>Hora de Aventura</b></h3>
+                    <p class="esti"><b>A música de abertura acabou de entrar na sua cabeça</b></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/pb.jpg" class="d-block w-100" alt="Imagem Demonstrativa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><b>Peaky Blinders</b></h3>
+                    <p class="esti"><b>Seja como Tommy: Frio e calculista</b></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/loki.jpg" class="d-block w-100" alt="Imagem Demonstrativa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><b>Thor: Ragnarok</b></h3>
+                    <p class="esti"><b>Só para vermos o Loki ressucitar de novo</b></p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container-fluid">
+        <div class="temas">
+            <h5 style="text-align: center;">Temas: </h5>
+            <button type="button" class="btn btn-primary" id="fundoPrimary">Fundo Primary</button>
+            <button type="button" class="btn btn-secondary" id="fundoSecondary">Fundo Secondary</button>
+            <button type="button" class="btn btn-success" id="fundoSucess">Fundo Success</button>
+            <button type="button" class="btn btn-danger" id="fundoDanger">Fundo Danger</button>
+            <button type="button" class="btn btn-warning" id="fundoWarning">Fundo Warning</button>
+            <button type="button" class="btn btn-info" id="fundoInfo">Fundo Info</button>
+            <button type="button" class="btn btn-light" id="fundoLight">Fundo Light</button>
+            <button type="button" class="btn btn-dark" id="fundoDark">Fundo Dark</button>
+            <button type="button" class="btn btn-outline-info" id="vanish">Remover Fundo</button>
+        </div>
+    </div>
+    <div class="alert alert-success font-weight-bold d-flex justify-content-end" role="alert">
+        <p class="central">Desenhos</p>
+        <button type="button" class="btn btn-outline-danger" id="esconderDesenho">Esconder Conteúdo</button>
+        <button type="button" class="btn btn-outline-dark " id="aparecerDesenho">Aparecer Conteúdo</button>
+    </div>
+    <div class="row" id="drax">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/gumball.jpg" class="card-img-top" alt="Imagem de O Incrível Mundo de Gumball">
+                <div class="card-body">
+                    <h5 class="card-title">O Incrível Mundo de Gumball</h5>
+                    <p class="card-text">
+                        A história mostra um gato de 12 anos com uma
+                        queda por confusões e que tem um fantástico grupo de amigos estranhos, passando por várias
+                        aventuras
+                        juntos,
+                        mostrando o valor da família e da amizade.
+                    </p>
+                    <br>
+                    <div class="row ">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">11min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/winx.jpg" class="card-img-top" alt="Imagem de O Clube das Winx">
+                <div class="card-body">
+                    <h5 class="card-title">O Clube das Winx</h5>
+                    <p class="card-text">
+                        Bloom é uma garota com poderes mágicos que viaja para uma Escola de Fadas onde se torna amiga de
+                        outras
+                        fadas
+                        e juntas elas usam seus poderes para salvar o universo e toda a dimensão mágica.
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">24min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/xmen.jpg" class="card-img-top" alt="Imagem de X-Men: Evolution">
+                <div class="card-body">
+                    <h5 class="card-title">X-Men: Evolution</h5>
+                    <p class="card-text">
+                        Professor X reúne uma equipe de jovens mutantes sobre-humanos para salvar o mundo das forças do
+                        mal e para
+                        fazer os humanos aceitarem os mutantes em seu mundo.
+                    </p>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">22min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-secondary font-weight-bold d-flex justify-content-end mt-5" role="alert">
+        <p class="central">Séries</p>
+        <button type="button" class="btn btn-outline-danger" id="esconderSerie">Esconder Conteúdo</button>
+        <button type="button" class="btn btn-outline-dark" id="aparecerSerie">Aparecer Conteúdo</button>
+    </div>
+    <div class="row" id="groot">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/himym.jpeg" class="card-img-top" alt="Imagem de How I Met Your Mother">
+                <div class="card-body">
+                    <h5 class="card-title">How I Met Your Mother</h5>
+                    <p class="card-text">
+                        O arquiteto Ted Mosby conta a história sobre como conheceu a mãe dos seus filhos, narrando todas
+                        as
+                        aventuras que
+                        ele e seus amigos fizeram.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">23min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/tbbt.png" class="card-img-top" alt="Imagem de The Big Bang Theory">
+                <div class="card-body">
+                    <h5 class="card-title">The Big Bang Theory</h5>
+                    <p class="card-text">
+                        Leonard e Sheldon são dois gênios da física que vivem em paz com os amigos, mas tudo começa a
+                        mudar quando
+                        conhecem sua nova vizinha.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">22min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/vikings.jpg" class="card-img-top" alt="Imagem de Vikings">
+                <div class="card-body">
+                    <h5 class="card-title">Vikings</h5>
+                    <p class="card-text">
+                        Vikings segue a vida de Ragnar Lothbrok, o maior guerreiro da sua era. Lider por natureza, com
+                        seus amigos
+                        e sua família, ele ascende ao poder e torna-se uma lenda.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">45min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-primary font-weight-bold d-flex justify-content-end mt-5" role="alert">
+        <p class="central">Filmes</p>
+        <button type="button" class="btn btn-outline-danger" id="esconderFilmes">Esconder Conteúdo</button>
+        <button type="button" class="btn btn-outline-dark" id="aparecerFilmes">Aparecer Conteúdo</button>
+    </div>
+    <div class="row" id="rocket">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/avengers.jpg" class="card-img-top" alt="Imagem de Vingadores: Ultimato">
+                <div class="card-body">
+                    <h5 class="card-title">Vingadores: Ultimato</h5>
+                    <p class="card-text">
+                        Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de
+                        amigos e entes
+                        queridos, e tentarão trazer todos de volta, custe o que custar.
+                    </p>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">3h2min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/arthur.jpg" class="card-img-top" alt="Imagem de Arthur: Um Milionário Irresistível">
+                <div class="card-body">
+                    <h5 class="card-title">Arthur: Um Milionário Irresistível</h5>
+                    <p class="card-text">
+                        O mimado, irresponsável e bilionário, Arthur Bach, mora numa mansão com sua babá, a Sra.
+                        Hobson, porém tudo muda quando sua mãe o obriga a casar com uma mulher que ele não ama.
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">1h50min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/enrolados.jpg" class="card-img-top" alt="Imagem de Enrolados">
+                <div class="card-body">
+                    <h5 class="card-title">Enrolados</h5>
+                    <p class="card-text">
+                        Uma garota com cabelos mágicos que vive em uma torre conhece um bandido, e com ele, finalmente
+                        ela foge
+                        da torre e tenta realizar seu sonho, enfrentando muitos perigos e conhecendo novas pessoas.
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted time">1h40min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome: </label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail: </label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem: </label>
+                <textarea class="form-control" id="mensagem"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" id="enviar">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/aab555f963.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
