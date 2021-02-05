@@ -14,16 +14,16 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <style>
-    .card-img-top{
+    .card-img-top {
       height: 200px;
     }
 
-    .cores{
+    .cores {
       margin-left: 70px;
     }
 
-    #barraFilmes{
-      background-color:#EE82EE;
+    #barraFilmes {
+      background-color: #EE82EE;
       color: #8B008B;
       font-size: 30px;
       margin-top: 20px;
@@ -33,7 +33,7 @@
       border-bottom-right-radius: 50px;
     }
 
-    #barraSeries{
+    #barraSeries {
       background-color: #98FB98;
       color: #006400;
       font-size: 30px;
@@ -44,7 +44,7 @@
       border-bottom-right-radius: 50px;
     }
 
-    #barraAnimes{
+    #barraAnimes {
       background-color: #87CEEB;
       color: #0000FF;
       font-size: 30px;
@@ -55,13 +55,45 @@
       border-bottom-right-radius: 50px;
     }
 
-    .botão-mostrar-esconder{
+    .botão-mostrar-esconder {
       margin-left: 30px;
+    }
+
+    #logo {
+      height: auto;
+      width: 100%;
+      margin-left: 350px;
+    }
+
+    .esp_logo {
+      width: 400px;
+      margin-left: 110px;
+      margin-right: 250px;
+      height: 200px;
+    }
+
+    header {
+      top: 0;
+      position: sticky;
+      background-color: rgb(0, 0, 112);
+    }
+
+    .barra_embaixo {
+      background-color: #8B4513;
+      height: 10px;
     }
   </style>
 </head>
 
 <body>
+
+  <header>
+      <div class="esp_logo">
+        <img id="logo" src="../Projects/imgs/Logo_site.png" alt="Logo do site">
+      </div>
+    <div class="barra_embaixo"></div>
+  </header>
+
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -119,8 +151,10 @@
 
   <div class="alert d-flex justify-content-start" role="alert" id="barraFilmes">
     <p>Filmes</p>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderFilmes">Esconder Filmes</button>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarFilmes">Mostrar Filmes</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderFilmes">Esconder
+      Filmes</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarFilmes">Mostrar
+      Filmes</button>
   </div>
   <div class="row" id="dosFilmes">
     <div class="col-md-4">
@@ -149,7 +183,8 @@
         <div class="card-body">
           <h5 class="card-title">V de Vingança</h5>
           <p class="card-text">
-             Um governo ditador, violento, sujo...e um homem cansado de tudo isso e que sabe todos os podres para acabar com ele.
+            Um governo ditador, violento, sujo...e um homem cansado de tudo isso e que sabe todos os podres para acabar
+            com ele.
           </p>
           <br>
           <div class="row">
@@ -188,9 +223,10 @@
 
   <div class="alert d-flex justify-content-start mt-5" role="alert" id="barraSeries">
     <p>Séries</p>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderSerie">Esconder Séries</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderSerie">Esconder
+      Séries</button>
     <button type="button" class="botão-mostrar-esconder btn btn-outline-dark" id="MostrarSerie">Mostrar Séries</button>
-</div>
+  </div>
   <div class="row" id="dasSeries">
     <div class="col-md-4">
       <div class="card">
@@ -198,7 +234,8 @@
         <div class="card-body">
           <h5 class="card-title">Supernatural</h5>
           <p class="card-text">
-            Dois irmãos que percorrem o país esfrentando seres mitológicos, sobrenaturais ou até divinos, qualquer um que não siga um bom caminho.
+            Dois irmãos que percorrem o país esfrentando seres mitológicos, sobrenaturais ou até divinos, qualquer um
+            que não siga um bom caminho.
           </p>
           <div class="row">
             <div class="col-md-6">
@@ -217,7 +254,8 @@
         <div class="card-body">
           <h5 class="card-title">The Walking Dead</h5>
           <p class="card-text">
-            Um grupo liderado pelo ex-policial Rick Grimmes tentando sobreviver ao apocalipse zumbi, enfrentando os mortos-vivos e pessoas más no caminho
+            Um grupo liderado pelo ex-policial Rick Grimmes tentando sobreviver ao apocalipse zumbi, enfrentando os
+            mortos-vivos e pessoas más no caminho
           </p>
           <div class="row">
             <div class="col-md-6">
@@ -236,7 +274,8 @@
         <div class="card-body">
           <h5 class="card-title">Dexter</h5>
           <p class="card-text">
-            Um policial que secretamente é um psicopata. Uma combinação bem diferente, mas que de uma certa forma, é usada para o bem.
+            Um policial que secretamente é um psicopata. Uma combinação bem diferente, mas que de uma certa forma, é
+            usada para o bem.
           </p>
           <div class="row">
             <div class="col-md-6">
@@ -254,8 +293,10 @@
 
   <div class="alert d-flex justify-content-start" role="alert" id="barraAnimes">
     <p>Animes</p>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderAnimes">Esconder Animes</button>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarAnimes">Mostrar Animes</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderAnimes">Esconder
+      Animes</button>
+    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarAnimes">Mostrar
+      Animes</button>
   </div>
   <div class="row" id="dosAnimes">
     <div class="col-md-4">
@@ -264,7 +305,8 @@
         <div class="card-body">
           <h5 class="card-title">Bleach</h5>
           <p class="card-text">
-            Um garoto que tem uma vida normal até ser atacado por um Hollow e se tornar o mais novo ceifeiro de almas. No começo parece ser algo interessante e legal, mas isso o causa grandes problemas.
+            Um garoto que tem uma vida normal até ser atacado por um Hollow e se tornar o mais novo ceifeiro de almas.
+            No começo parece ser algo interessante e legal, mas isso o causa grandes problemas.
           </p>
           <br><br>
           <div class="row">
@@ -284,7 +326,8 @@
         <div class="card-body">
           <h5 class="card-title">Sword Art Online</h5>
           <p class="card-text">
-            Um garoto, preso em um jogo em que ele pode perder a própria vida. É então que ele embarca em uma jornada incrível onde encontra o amor da sua vida.
+            Um garoto, preso em um jogo em que ele pode perder a própria vida. É então que ele embarca em uma jornada
+            incrível onde encontra o amor da sua vida.
           </p>
           <br>
           <div class="row">
@@ -304,7 +347,8 @@
         <div class="card-body">
           <h5 class="card-title">Death Note</h5>
           <p class="card-text">
-            Um garoto universitário, super inteligente e cansado com a injustiça que ganha o poder de matar as pessoas escrevendo o nome deles num caderno chamado Death Note.
+            Um garoto universitário, super inteligente e cansado com a injustiça que ganha o poder de matar as pessoas
+            escrevendo o nome deles num caderno chamado Death Note.
           </p>
           <br>
           <div class="row">
@@ -319,7 +363,7 @@
       </div>
     </div>
   </div>
-  
+
   <br><br>
   <div class="container">
     <form>
