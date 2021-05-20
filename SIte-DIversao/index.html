@@ -1,401 +1,551 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Almanaque Dos Filmes</title>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <title>Almanaque Dos Filmes</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .card-img-top {
+        height: 200px;
+      }
 
-  <style>
-    .card-img-top {
-      height: 200px;
-    }
+      .cores {
+        margin-left: 70px;
+      }
 
-    .cores {
-      margin-left: 70px;
-    }
+      #barraFilmes {
+        background-color: #ee82ee;
+        color: #8b008b;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
 
-    #barraFilmes {
-      background-color: #EE82EE;
-      color: #8B008B;
-      font-size: 30px;
-      margin-top: 20px;
-      margin-left: 70px;
-      margin-right: 70px;
-      border-top-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-    }
+      #barraSeries {
+        background-color: #98fb98;
+        color: #006400;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
 
-    #barraSeries {
-      background-color: #98FB98;
-      color: #006400;
-      font-size: 30px;
-      margin-top: 20px;
-      margin-left: 70px;
-      margin-right: 70px;
-      border-top-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-    }
+      #barraAnimes {
+        background-color: #87ceeb;
+        color: #0000ff;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
 
-    #barraAnimes {
-      background-color: #87CEEB;
-      color: #0000FF;
-      font-size: 30px;
-      margin-top: 20px;
-      margin-left: 70px;
-      margin-right: 70px;
-      border-top-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-    }
+      .botão-mostrar-esconder {
+        margin-left: 30px;
+      }
 
-    .botão-mostrar-esconder {
-      margin-left: 30px;
-    }
+      #logo {
+        height: auto;
+        width: 100%;
+        margin-left: 350px;
+      }
 
-    #logo {
-      height: auto;
-      width: 100%;
-      margin-left: 350px;
-    }
+      .esp_logo {
+        width: 400px;
+        margin-left: 110px;
+        margin-right: 250px;
+        height: 200px;
+      }
 
-    .esp_logo {
-      width: 400px;
-      margin-left: 110px;
-      margin-right: 250px;
-      height: 200px;
-    }
+      header {
+        top: 0;
+        position: static;
+        background-color: #87ceeb;
+      }
 
-    header {
-      top: 0;
-      position: static;
-      background-color: #87CEEB;
-    }
+      .barra_embaixo {
+        background-color: #8b4513;
+        height: 10px;
+      }
+    </style>
+  </head>
 
-    .barra_embaixo {
-      background-color: #8B4513;
-      height: 10px;
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
+  <body>
+    <header>
       <div class="esp_logo">
-        <img id="logo" src="img/Logo_site.png" alt="Logo do site">
+        <img id="logo" src="img/Logo_site.png" alt="Logo do site" />
       </div>
-    <div class="barra_embaixo"></div>
-  </header>
+      <div class="barra_embaixo"></div>
+    </header>
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/Vingadores.png" class="d-block w-100" alt="Vingadores">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Filmes</h5>
-          <p>Os melhores filmes pra você assistir</p>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleCaptions"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/Vingadores.png"
+            class="d-block w-100"
+            alt="Vingadores"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Filmes</h5>
+            <p>Os melhores filmes pra você assistir</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Spartacus.jpg" class="d-block w-100" alt="Spartacus" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Séries</h5>
+            <p>Séries ótimas para te prender na tela da TV</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Sword.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Animes</h5>
+            <p>Animes pra você assistir e se emocionar o dia inteiro</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/Spartacus.jpg" class="d-block w-100" alt="Spartacus">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Séries</h5>
-          <p>Séries ótimas para te prender na tela da TV</p>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--FIM CARROSSEL-->
+
+    <div class="container-fluid">
+      <div class="cores">
+        <h5 style="text-align: center">Cores:</h5>
+        <button type="button" class="btn btn-primary" id="fundoPrimary">
+          Fundo Primary
+        </button>
+        <button type="button" class="btn btn-secondary" id="fundoSecondary">
+          Fundo Secondary
+        </button>
+        <button type="button" class="btn btn-success" id="fundoSuccess">
+          Fundo Success
+        </button>
+        <button type="button" class="btn btn-danger" id="fundoDanger">
+          Fundo Danger
+        </button>
+        <button type="button" class="btn btn-warning" id="fundoWarning">
+          Fundo Warning
+        </button>
+        <button type="button" class="btn btn-info" id="fundoInfo">
+          Fundo Info
+        </button>
+        <button type="button" class="btn btn-light" id="fundoLight">
+          Fundo Light
+        </button>
+        <button type="button" class="btn btn-dark" id="fundoDark">
+          Fundo Dark
+        </button>
+        <button type="button" class="btn btn-outline-info" id="semFundo">
+          Remover Fundo
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="alert d-flex justify-content-start"
+      role="alert"
+      id="barraFilmes"
+    >
+      <p>Filmes</p>
+      <button
+        type="button"
+        class="botão-mostrar-esconder btn btn-outline-danger"
+        id="EsconderFilmes"
+      >
+        Esconder Filmes
+      </button>
+      <button
+        type="button"
+        class="botão-mostrar-esconder btn btn-outline-dark"
+        id="MostrarFilmes"
+      >
+        Mostrar Filmes
+      </button>
+    </div>
+    <div class="row" id="dosFilmes">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/Jãozin I MAria.jpg"
+            class="card-img-top"
+            alt="Imagem do Filme João e Maria: Caçadores de bruxas"
+          />
+          <div class="card-body">
+            <h5 class="card-title">João & Maria: Caçadores de Bruxas</h5>
+            <p class="card-text">
+              A clássica história dos dois irmãos, a casa de doce e as bruxas,
+              mas um pouco diferente e mais violento.
+            </p>
+            <br />
+            <div class="row">
+              <div class="col-md-6">
+                <a
+                  href="https://overflixhd.com/assistir/joao-e-maria-cacadores-de-bruxas-2013-dublado-online-gratis-hd-2120/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Ver</a
+                >
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">98min</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/Sword.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Animes</h5>
-          <p>Animes pra você assistir e se emocionar o dia inteiro</p>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/V de Vingança.jpg"
+            class="card-img-top"
+            alt="Imagem do Filme V de Vingança"
+          />
+          <div class="card-body">
+            <h5 class="card-title">V de Vingança</h5>
+            <p class="card-text">
+              Um governo ditador, violento, sujo...e um homem cansado de tudo
+              isso e que sabe todos os podres para acabar com ele.
+            </p>
+            <br />
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">133min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/IT.jpg"
+            class="card-img-top"
+            alt="Imagem do filme It: A Coisa"
+          />
+          <div class="card-body">
+            <h5 class="card-title">IT: A Coisa</h5>
+            <p class="card-text">
+              Um ser terrível que devora a carne das pessoas enquanto se
+              alimenta do medo delas, principalmente crianças.
+            </p>
+            <br /><br />
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">135min</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+    <!--Fim Filmes-->
+
+    <div
+      class="alert d-flex justify-content-start mt-5"
+      role="alert"
+      id="barraSeries"
+    >
+      <p>Séries</p>
+      <button
+        type="button"
+        class="botão-mostrar-esconder btn btn-outline-danger"
+        id="EsconderSerie"
+      >
+        Esconder Séries
+      </button>
+      <button
+        type="button"
+        class="botão-mostrar-esconder btn btn-outline-dark"
+        id="MostrarSerie"
+      >
+        Mostrar Séries
+      </button>
+    </div>
+    <div class="row" id="dasSeries">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/supernatural.jpg"
+            class="card-img-top"
+            alt="Imagem da Série Supernatural"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Supernatural</h5>
+            <p class="card-text">
+              Dois irmãos que percorrem o país esfrentando seres mitológicos,
+              sobrenaturais ou até divinos, qualquer um que não siga um bom
+              caminho.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">15 Temporadas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/TWD.jpg"
+            class="card-img-top"
+            alt="Imagem da Série The Walking Dead"
+          />
+          <div class="card-body">
+            <h5 class="card-title">The Walking Dead</h5>
+            <p class="card-text">
+              Um grupo liderado pelo ex-policial Rick Grimmes tentando
+              sobreviver ao apocalipse zumbi, enfrentando os mortos-vivos e
+              pessoas más no caminho
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">10 Temporadas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/Dexter.jpg"
+            class="card-img-top"
+            alt="Imagem da Série Dexter"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Dexter</h5>
+            <p class="card-text">
+              Um policial que secretamente é um psicopata. Uma combinação bem
+              diferente, mas que de uma certa forma, é usada para o bem.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">8 Temporadas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim Séries-->
+
+    <div
+      class="alert d-flex justify-content-start"
+      role="alert"
+      id="barraAnimes"
+    >
+      <p>Animes</p>
+      <button
+        type="button"
+        class="botão-mostrar-esconder btn btn-outline-danger"
+        id="EsconderAnimes"
+      >
+        Esconder Animes
+      </button>
+      <button
+        type="button"
+        class="botão-mostrar-esconder btn btn-outline-dark"
+        id="MostrarAnimes"
+      >
+        Mostrar Animes
+      </button>
+    </div>
+    <div class="row" id="dosAnimes">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/Bleach.jpg"
+            class="card-img-top"
+            alt="Imagem do Anime Bleach"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bleach</h5>
+            <p class="card-text">
+              Um garoto que tem uma vida normal até ser atacado por um Hollow e
+              se tornar o mais novo ceifeiro de almas. No começo parece ser algo
+              interessante e legal, mas isso o causa grandes problemas.
+            </p>
+            <br /><br />
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">366 episódios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/Sword.jpg"
+            class="card-img-top"
+            alt="Imagem do Anime Sword Art Online"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sword Art Online</h5>
+            <p class="card-text">
+              Um garoto, preso em um jogo em que ele pode perder a própria vida.
+              É então que ele embarca em uma jornada incrível onde encontra o
+              amor da sua vida.
+            </p>
+            <br />
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">96 episódios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="img/Death Note.jpg"
+            class="card-img-top"
+            alt="Imagem do Anime Death Note"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Death Note</h5>
+            <p class="card-text">
+              Um garoto universitário, super inteligente e cansado com a
+              injustiça que ganha o poder de matar as pessoas escrevendo o nome
+              deles num caderno chamado Death Note.
+            </p>
+            <br />
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted time">37 episódios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome: </label>
+          <input type="text" class="form-control" id="nome" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail: </label>
+          <input type="email" class="form-control" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem: </label>
+          <textarea class="form-control" id="mensagem"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" id="enviar">
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <a href="https://overflixhd.com/assistir/joao-e-maria-cacadores-de-bruxas-2013-dublado-online-gratis-hd-2120/" target="_blank">
+      <p>Overflix</p>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <!--FIM CARROSSEL-->
 
-  <div class="container-fluid">
-    <div class="cores">
-      <h5 style="text-align: center;">Cores: </h5>
-      <button type="button" class="btn btn-primary" id="fundoPrimary">Fundo Primary</button>
-      <button type="button" class="btn btn-secondary" id="fundoSecondary">Fundo Secondary</button>
-      <button type="button" class="btn btn-success" id="fundoSuccess">Fundo Success</button>
-      <button type="button" class="btn btn-danger" id="fundoDanger">Fundo Danger</button>
-      <button type="button" class="btn btn-warning" id="fundoWarning">Fundo Warning</button>
-      <button type="button" class="btn btn-info" id="fundoInfo">Fundo Info</button>
-      <button type="button" class="btn btn-light" id="fundoLight">Fundo Light</button>
-      <button type="button" class="btn btn-dark" id="fundoDark">Fundo Dark</button>
-      <button type="button" class="btn btn-outline-info" id="semFundo">Remover Fundo</button>
-    </div>
-  </div>
-
-  <div class="alert d-flex justify-content-start" role="alert" id="barraFilmes">
-    <p>Filmes</p>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderFilmes">Esconder
-      Filmes</button>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarFilmes">Mostrar
-      Filmes</button>
-  </div>
-  <div class="row" id="dosFilmes">
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/Jãozin I MAria.jpg" class="card-img-top" alt="Imagem do Filme João e Maria: Caçadores de bruxas">
-        <div class="card-body">
-          <h5 class="card-title">João & Maria: Caçadores de Bruxas</h5>
-          <p class="card-text">
-            A clássica história dos dois irmãos, a casa de doce e as bruxas, mas um pouco diferente e mais violento.
-          </p>
-          <br>
-          <div class="row ">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">98min</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/V de Vingança.jpg" class="card-img-top" alt="Imagem do Filme V de Vingança">
-        <div class="card-body">
-          <h5 class="card-title">V de Vingança</h5>
-          <p class="card-text">
-            Um governo ditador, violento, sujo...e um homem cansado de tudo isso e que sabe todos os podres para acabar
-            com ele.
-          </p>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">133min</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/IT.jpg" class="card-img-top" alt="Imagem do filme It: A Coisa">
-        <div class="card-body">
-          <h5 class="card-title">IT: A Coisa</h5>
-          <p class="card-text">
-            Um ser terrível que devora a carne das pessoas enquanto se alimenta do medo delas, principalmente crianças.
-          </p>
-          <br><br>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">135min</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Fim Filmes-->
-
-  <div class="alert d-flex justify-content-start mt-5" role="alert" id="barraSeries">
-    <p>Séries</p>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderSerie">Esconder
-      Séries</button>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark" id="MostrarSerie">Mostrar Séries</button>
-  </div>
-  <div class="row" id="dasSeries">
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/supernatural.jpg" class="card-img-top" alt="Imagem da Série Supernatural">
-        <div class="card-body">
-          <h5 class="card-title">Supernatural</h5>
-          <p class="card-text">
-            Dois irmãos que percorrem o país esfrentando seres mitológicos, sobrenaturais ou até divinos, qualquer um
-            que não siga um bom caminho.
-          </p>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">15 Temporadas</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/TWD.jpg" class="card-img-top" alt="Imagem da Série The Walking Dead">
-        <div class="card-body">
-          <h5 class="card-title">The Walking Dead</h5>
-          <p class="card-text">
-            Um grupo liderado pelo ex-policial Rick Grimmes tentando sobreviver ao apocalipse zumbi, enfrentando os
-            mortos-vivos e pessoas más no caminho
-          </p>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">10 Temporadas</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/Dexter.jpg" class="card-img-top" alt="Imagem da Série Dexter">
-        <div class="card-body">
-          <h5 class="card-title">Dexter</h5>
-          <p class="card-text">
-            Um policial que secretamente é um psicopata. Uma combinação bem diferente, mas que de uma certa forma, é
-            usada para o bem.
-          </p>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">8 Temporadas</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Fim Séries-->
-
-  <div class="alert d-flex justify-content-start" role="alert" id="barraAnimes">
-    <p>Animes</p>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-danger" id="EsconderAnimes">Esconder
-      Animes</button>
-    <button type="button" class="botão-mostrar-esconder btn btn-outline-dark " id="MostrarAnimes">Mostrar
-      Animes</button>
-  </div>
-  <div class="row" id="dosAnimes">
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/Bleach.jpg" class="card-img-top" alt="Imagem do Anime Bleach">
-        <div class="card-body">
-          <h5 class="card-title">Bleach</h5>
-          <p class="card-text">
-            Um garoto que tem uma vida normal até ser atacado por um Hollow e se tornar o mais novo ceifeiro de almas.
-            No começo parece ser algo interessante e legal, mas isso o causa grandes problemas.
-          </p>
-          <br><br>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">366 episódios</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/Sword.jpg" class="card-img-top" alt="Imagem do Anime Sword Art Online">
-        <div class="card-body">
-          <h5 class="card-title">Sword Art Online</h5>
-          <p class="card-text">
-            Um garoto, preso em um jogo em que ele pode perder a própria vida. É então que ele embarca em uma jornada
-            incrível onde encontra o amor da sua vida.
-          </p>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">96 episódios</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/Death Note.jpg" class="card-img-top" alt="Imagem do Anime Death Note">
-        <div class="card-body">
-          <h5 class="card-title">Death Note</h5>
-          <p class="card-text">
-            Um garoto universitário, super inteligente e cansado com a injustiça que ganha o poder de matar as pessoas
-            escrevendo o nome deles num caderno chamado Death Note.
-          </p>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary">View</a>
-            </div>
-            <div class="col-md-6">
-              <p class="text-muted time">37 episódios</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br><br>
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="nome">Nome: </label>
-        <input type="text" class="form-control" id="nome">
-      </div>
-      <div class="form-group">
-        <label for="email">E-Mail: </label>
-        <input type="email" class="form-control" id="email">
-      </div>
-      <div class="form-group">
-        <label for="mensagem">Mensagem: </label>
-        <textarea class="form-control" id="mensagem"></textarea>
-      </div>
-      <button type="button" class="btn btn-primary" id="enviar">Enviar</button>
-    </form>
-  </div>
-
-  <script src="https://kit.fontawesome.com/aab555f963.js" crossorigin="anonymous"></script>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/aab555f963.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
